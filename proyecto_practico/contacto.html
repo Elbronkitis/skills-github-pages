@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WebStore — Contacto</title>
+  <meta name="description" content="Contacta a WebStore para solicitar cotización y servicios." />
+  <link rel="stylesheet" href="css/contacto.css" />
+  <script defer src="js/form.js"></script>
+</head>
+<body id="contactPage">
+  <header class="site-header" role="banner">
+    <div class="wrap">
+      <a class="logo" href="index.html">WebStore</a>
+      <nav aria-label="Principal">
+        <ul id="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html" aria-current="page" class="active">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="title"><div class="wrap"><h1>Contacta con nosotros</h1><p class="lead">Cuéntanos tu proyecto y te responderemos en menos de 24h.</p></div></section>
+
+    <section class="form-section" aria-labelledby="form-contact">
+      <div class="wrap">
+        <form id="contactForm" class="contact-form" novalidate aria-describedby="form-note">
+          <p id="form-note" class="visually-hidden">Completa el formulario para solicitar una cotización.</p>
+
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" required minlength="2" />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="producto">Producto (opcional)</label>
+          <input id="producto" name="producto" type="text" placeholder="Por ejemplo: Plan Ecommerce" />
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="6" required minlength="8"></textarea>
+
+          <button class="btn btn-primary" type="submit">Enviar</button>
+
+          <p id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap"><p>© 2025 WebStore</p></div></footer>
+</body>
+</html>

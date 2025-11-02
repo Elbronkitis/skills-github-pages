@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WebStore — Productos</title>
+  <meta name="description" content="Catálogo de planes y productos de diseño web." />
+  <link rel="stylesheet" href="css/productos.css" />
+</head>
+<body id="productsPage">
+  <header class="site-header" role="banner">
+    <div class="wrap">
+      <a class="logo" href="index.html">WebStore</a>
+      <nav aria-label="Principal">
+        <ul id="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+         <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html" aria-current="page" class="active">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="title"><div class="wrap"><h1>Catálogo de Productos</h1><p class="lead">Planes listos para lanzar tu proyecto.</p></div></section>
+
+    <section class="catalog" aria-labelledby="catalogo">
+      <div class="wrap">
+        <div class="grid">
+          <!-- Producto 1 -->
+          <article class="product" role="article">
+            <img src="img/product1.jpg" alt="Plan Landing Page" width="800" height="500">
+            <div class="product-body">
+              <h3>Plan Landing Page</h3>
+              <p class="price">USD 90</p>
+              <p>Landing rápida y optimizada para conversiones.</p>
+              <a class="btn btn-primary" href="contacto.html?producto=landing">Solicitar cotización</a>
+            </div>
+          </article>
+
+          <!-- Producto 2 -->
+          <article class="product" role="article">
+            <img src="img/product2.jpg" alt="Plan Ecommerce" width="800" height="500">
+            <div class="product-body">
+              <h3>Plan Ecommerce</h3>
+              <p class="price">USD 250</p>
+              <p>Tienda online con catálogo y pago integrado.</p>
+              <a class="btn btn-primary" href="contacto.html?producto=ecommerce">Solicitar cotización</a>
+            </div>
+          </article>
+
+          <!-- Producto 3 -->
+          <article class="product" role="article">
+            <img src="img/product3.jpg" alt="Branding Digital" width="800" height="500">
+            <div class="product-body">
+              <h3>Branding Digital</h3>
+              <p class="price">USD 80</p>
+              <p>Logo, paleta y manual básico de marca.</p>
+              <a class="btn btn-primary" href="contacto.html?producto=branding">Solicitar cotización</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap"><p>© 2025 WebStore</p></div></footer>
+</body>
+</html>
